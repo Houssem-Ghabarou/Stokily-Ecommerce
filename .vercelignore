@@ -1,0 +1,26 @@
+# Next.js build output
+.next/
+.next/cache/
+
+# Dependencies
+node_modules/
+
+# Build outputs
+out/
+dist/
+build/
+
+# Environment files (if you want to keep them local)
+.env*.local
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
