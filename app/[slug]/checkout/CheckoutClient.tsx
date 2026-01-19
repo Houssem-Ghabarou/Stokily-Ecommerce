@@ -61,7 +61,7 @@ export default function CheckoutClient({ config, categories, slug }: CheckoutCli
     console.log("[Checkout] Full config object:", JSON.stringify(config, null, 2));
     console.log("[Checkout] Shipping price value:", config.shippingPrice);
     console.log("[Checkout] Shipping price type:", typeof config.shippingPrice);
-    console.log("[Checkout] Shipping price > 0 check:", config.shippingPrice > 0);
+    console.log("[Checkout] Shipping price > 0 check:", (config.shippingPrice ?? 0) > 0);
     console.log("[Checkout] Has shippingPrice key:", 'shippingPrice' in config);
   }, [config]);
 
