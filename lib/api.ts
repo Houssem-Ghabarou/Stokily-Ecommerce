@@ -1,5 +1,5 @@
 const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL || "http://10.1.0.63:4000/api";
+  process.env.NEXT_PUBLIC_API_URL || "https://stokily-backend.vercel.app/api";
 
 export interface WebsiteConfig {
   id: string;

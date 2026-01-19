@@ -73,8 +73,10 @@ export default function CartClient({ config, categories, slug }: CartClientProps
             <ShoppingBag className="w-24 h-24 text-gray-300 mx-auto mb-6" />
             <h1
               className="text-2xl font-bold mb-4"
-              style={{ fontFamily: `var(--font-heading), ${config.headingFont || 'Poppins'}, system-ui, sans-serif` }}
-              style={{ color: config.secondaryColor }}
+              style={{ 
+                fontFamily: `var(--font-heading), ${config.headingFont || 'Poppins'}, system-ui, sans-serif`,
+                color: config.secondaryColor 
+              }}
             >
               Your cart is empty
             </h1>

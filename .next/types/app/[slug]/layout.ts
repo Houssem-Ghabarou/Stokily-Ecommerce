@@ -1,4 +1,4 @@
-// File: C:\Users\imxro\Desktop\STOCKY\ecommerce-web\app\[slug]\layout.tsx
+// File: /home/houssem-ghabarou/Desktop/Stokily/Stokily-Ecommerce/app/[slug]/layout.tsx
 import * as entry from '../../../../app/[slug]/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
