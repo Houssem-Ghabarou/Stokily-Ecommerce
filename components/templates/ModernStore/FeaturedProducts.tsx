@@ -87,8 +87,10 @@ export default function FeaturedProducts({
             <div>
               <h2
                 className="text-2xl font-bold"
-                style={{ fontFamily: "var(--font-heading), system-ui, sans-serif" }}
-                style={{ color: secondaryColor }}
+                style={{ 
+                  fontFamily: "var(--font-heading), system-ui, sans-serif",
+                  color: secondaryColor 
+                }}
               >
                 Featured Products
               </h2>
