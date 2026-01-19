@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #3B82F6;
+  --secondary-color: #1F2937;
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-heading: 'Poppins', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography - Apply fonts to all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Apply heading font to bold text elements */
+.font-bold,
+.font-semibold {
+  font-family: var(--font-heading);
+}
+
+h1 { @apply text-3xl md:text-4xl lg:text-5xl; }
+h2 { @apply text-2xl md:text-3xl; }
+h3 { @apply text-xl md:text-2xl; }
+h4 { @apply text-lg md:text-xl; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Focus visible styles */
+*:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Button base styles */
+.btn {
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium transition-colors duration-200;
+}
+
+.btn-primary {
+  @apply bg-primary text-white hover:opacity-90;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-white hover:opacity-90;
+}
+
+.btn-outline {
+  @apply border-2 border-primary text-primary hover:bg-primary hover:text-white;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white rounded-xl shadow-sm border border-gray-100;
+}
+
+/* Input styles */
+.input {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors;
+}
+
+/* Badge styles */
+.badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.badge-success {
+  @apply bg-green-100 text-green-800;
+}
+
+.badge-warning {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.badge-error {
+  @apply bg-red-100 text-red-800;
+}
+
+/* Product badges */
+.product-badge {
+  @apply absolute z-10 px-2 py-1 text-xs font-semibold rounded-md shadow-sm;
+}
+
+.product-badge-new {
+  @apply bg-emerald-500 text-white;
+}
+
+.product-badge-sale {
+  @apply bg-red-500 text-white;
+}
+
+.product-badge-low-stock {
+  @apply bg-amber-500 text-white;
+}
+
+/* Card hover effects */
+.card-hover {
+  @apply transition-all duration-300 ease-out;
+}
+
+.card-hover:hover {
+  @apply -translate-y-1 shadow-lg;
+}
+
+/* Image zoom on hover */
+.img-zoom {
+  @apply transition-transform duration-500 ease-out;
+}
+
+.group:hover .img-zoom {
+  @apply scale-105;
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  @apply transition-all duration-200 ease-out;
+}
+
+/* Skeleton loading */
+.skeleton {
+  @apply animate-pulse bg-gray-200 rounded;
+}
+
+/* Search bar styles */
+.search-input {
+  @apply w-full pl-10 pr-4 py-2.5 bg-gray-50 border border-gray-200 rounded-full
+         text-sm placeholder-gray-400
+         focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-20
+         transition-all duration-200;
+}
+
+/* Filter pill styles */
+.filter-pill {
+  @apply px-4 py-2 text-sm font-medium rounded-full border transition-all duration-200;
+}
+
+.filter-pill-active {
+  @apply border-transparent text-white;
+  background-color: var(--primary-color);
+}
+
+.filter-pill-inactive {
+  @apply border-gray-200 text-gray-600 hover:border-gray-300 hover:bg-gray-50;
+}
+
+/* Sort dropdown */
+.sort-select {
+  @apply px-4 py-2 text-sm border border-gray-200 rounded-lg bg-white
+         focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-20
+         transition-all duration-200 cursor-pointer;
+}
+
+/* Featured section */
+.featured-scroll {
+  @apply flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.featured-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.featured-card {
+  @apply flex-shrink-0 snap-start;
+}
+
+/* Price styles */
+.price-original {
+  @apply text-gray-400 line-through text-sm;
+}
+
+.price-sale {
+  @apply text-red-600 font-bold;
+}
+
+/* Empty state */
+.empty-state {
+  @apply flex flex-col items-center justify-center py-16 text-center;
+}
+
+.empty-state-icon {
+  @apply w-16 h-16 text-gray-300 mb-4;
+}
+
+/* Mobile filter drawer */
+@media (max-width: 768px) {
+  .filter-drawer {
+    @apply fixed inset-x-0 bottom-0 z-50 bg-white rounded-t-2xl shadow-2xl
+           transform transition-transform duration-300 ease-out;
+  }
+
+  .filter-drawer-overlay {
+    @apply fixed inset-0 bg-black/50 z-40;
+  }
+}
