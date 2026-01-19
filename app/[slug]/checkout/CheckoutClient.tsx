@@ -131,8 +131,10 @@ export default function CheckoutClient({ config, categories, slug }: CheckoutCli
 
             <h1
               className="text-3xl font-bold mb-4"
-              style={{ fontFamily: `var(--font-heading), ${config.headingFont || 'Poppins'}, system-ui, sans-serif` }}
-              style={{ color: config.secondaryColor }}
+              style={{ 
+                fontFamily: `var(--font-heading), ${config.headingFont || 'Poppins'}, system-ui, sans-serif`,
+                color: config.secondaryColor 
+              }}
             >
               Order In Progress
             </h1>
