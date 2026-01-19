@@ -4,6 +4,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Online Store",
   description: "Shop our products online",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
