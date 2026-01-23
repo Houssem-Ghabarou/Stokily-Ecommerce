@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { isValidLocale, type Locale } from '@/lib/i18n';
 
-export default function LocaleHtml() {
+export default function LocaleHtml(): null {
   const pathname = usePathname();
   
   useEffect(() => {

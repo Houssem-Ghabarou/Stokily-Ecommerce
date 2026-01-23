@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
+import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -70,7 +71,11 @@ export default function MobileNav({ dict, appStoreUrl, locale = 'fr' }: MobileNa
         <div className="flex flex-col h-full">
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b border-gray-200">
-            <div className="flex items-center gap-3">
+            <Link 
+              href={`/${locale}`} 
+              onClick={closeSidebar}
+              className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+            >
               <Image
                 src="/stokily/logoBlue.png"
                 alt="Stokily Logo"
@@ -81,7 +86,7 @@ export default function MobileNav({ dict, appStoreUrl, locale = 'fr' }: MobileNa
               <span className="text-lg font-bold text-gray-900">
                 {dict.hero.title}
               </span>
-            </div>
+            </Link>
             <button
               onClick={closeSidebar}
               className="p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors"
