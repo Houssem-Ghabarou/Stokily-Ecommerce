@@ -2,6 +2,7 @@ import { fetchWebsiteData } from "@/lib/api";
 import { getGoogleFontsUrl, getFontCssVariables } from "@/lib/fonts";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { isValidLocale } from "@/lib/i18n";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -12,6 +13,16 @@ export async function generateMetadata({
   params,
 }: LayoutProps): Promise<Metadata> {
   const { slug } = await params;
+  
+  // If it's a locale, return basic metadata (page metadata will override with full SEO)
+  if (isValidLocale(slug)) {
+    return {
+      title: "Stokily",
+      description: "Complete business management solution",
+    };
+  }
+  
+  // Otherwise, fetch store data
   const data = await fetchWebsiteData(slug);
 
   if (!data) {
@@ -67,6 +78,13 @@ export async function generateMetadata({
 
 export default async function StoreLayout({ children, params }: LayoutProps) {
   const { slug } = await params;
+  
+  // If it's a locale, render without store-specific styling
+  if (isValidLocale(slug)) {
+    return <>{children}</>;
+  }
+  
+  // Otherwise, fetch store data
   const data = await fetchWebsiteData(slug);
 
   if (!data) {

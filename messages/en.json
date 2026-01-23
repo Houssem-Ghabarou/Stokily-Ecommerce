@@ -1,0 +1,260 @@
+{
+  "nav": {
+    "features": "Features",
+    "benefits": "Benefits",
+    "useCases": "Use Cases",
+    "downloadApp": "Download App"
+  },
+  "hero": {
+    "title": "Stokily",
+    "subtitle": "Transform Your Business with All-in-One Management",
+    "description": "Complete business management solution combining inventory control, point-of-sale, e-commerce, and analytics in one powerful platform. Works completely offline. Perfect for retail stores, pharmacies, restaurants, and online shops.",
+    "downloadAppStore": "Download on the App Store",
+    "downloadPlayStore": "Get it on Google Play",
+    "worksOffline": "Works Offline",
+    "barcodeScanning": "Barcode Scanning",
+    "multiLanguage": "Multi-Language"
+  },
+  "whyStokily": {
+    "title": "Why Stokily?",
+    "description": "Stokily is the complete business management solution that combines inventory control, point-of-sale, e-commerce, and analytics in one powerful platform. Whether you run a retail store, pharmacy, restaurant, or online shop, Stokily gives you everything you need to manage your business efficiently—even when you're offline."
+  },
+  "features": {
+    "title": "Core Features",
+    "subtitle": "Everything you need to run your business efficiently",
+    "stockManagement": {
+      "title": "Stock Management",
+      "description": "Complete inventory control at your fingertips. Track stock levels in real-time, get low stock alerts, support product variants, and view complete stock history.",
+      "realTime": "Real-time stock tracking",
+      "alerts": "Low stock alerts",
+      "variants": "Product variants support"
+    },
+    "pos": {
+      "title": "Point of Sale (POS)",
+      "description": "Lightning-fast checkout that keeps customers happy. Barcode scanning makes checkout 10x faster than manual entry.",
+      "barcode": "Barcode scanning",
+      "autoDeduction": "Automatic stock deduction",
+      "receipt": "Thermal receipt printing"
+    },
+    "invoicing": {
+      "title": "Professional Invoicing",
+      "description": "Create and manage invoices like a pro. Generate professional invoices with company branding and export to PDF.",
+      "pdf": "PDF export",
+      "tracking": "Payment status tracking",
+      "numbering": "Automatic numbering"
+    },
+    "ecommerce": {
+      "title": "E-Commerce Website Builder",
+      "description": "Create your online store in minutes—no coding required. Transform your inventory into a beautiful online store.",
+      "oneClick": "One-click website creation",
+      "autoSync": "Automatic product sync",
+      "responsive": "Mobile-responsive design"
+    },
+    "customers": {
+      "title": "Customer Management",
+      "description": "Build lasting customer relationships. Track purchase history, view customer statistics, and identify your best customers.",
+      "database": "Complete customer database",
+      "history": "Purchase history tracking",
+      "lifetime": "Customer lifetime value"
+    },
+    "analytics": {
+      "title": "Business Analytics",
+      "description": "Make data-driven decisions with powerful insights. Track revenue, sales performance, inventory health, and product performance.",
+      "revenue": "Revenue tracking",
+      "performance": "Product performance",
+      "dashboards": "Real-time dashboards"
+    }
+  },
+  "technical": {
+    "title": "Powerful Technical Features",
+    "subtitle": "Enterprise-grade features that make Stokily special",
+    "offline": {
+      "title": "Works Completely Offline",
+      "description": "Never lose a sale due to internet issues. Full functionality without internet connection. All features work offline with automatic sync when connection is restored.",
+      "why": "Why it matters: Internet can be unreliable. With Stokily, your business never stops."
+    },
+    "barcode": {
+      "title": "Professional Barcode Scanning",
+      "description": "Industry-standard barcode system. Scan products instantly with your phone camera. Supports all major formats: EAN, UPC, QR codes. Quick scan makes checkout 10x faster.",
+      "why": "Why it matters: Speed up checkout, reduce errors, compete with big retailers."
+    },
+    "printing": {
+      "title": "Thermal Receipt Printing",
+      "description": "Professional receipts for your customers. Bluetooth, USB, and network printer support. Automatic receipt generation with company branding.",
+      "why": "Why it matters: Professional image, customer satisfaction, legal compliance."
+    },
+    "multilang": {
+      "title": "Multi-Language Support",
+      "description": "Speak your customers' language. English, French, and Arabic with right-to-left (RTL) support. Easy language switching with localized date and time formats.",
+      "why": "Why it matters: Serve diverse customers, expand to new markets."
+    }
+  },
+  "benefits": {
+    "title": "Business Benefits",
+    "subtitle": "See how Stokily transforms your business operations",
+    "saveTime": {
+      "title": "Save Time",
+      "description": "10x faster checkout with barcode scanning. Automatic stock updates. Quick invoice generation. Instant reports."
+    },
+    "reduceErrors": {
+      "title": "Reduce Errors",
+      "description": "Barcode scanning eliminates typing mistakes. Automatic calculations. Stock validation prevents overselling."
+    },
+    "increaseRevenue": {
+      "title": "Increase Revenue",
+      "description": "Never lose a sale due to missing products. Professional image attracts customers. Better inventory management."
+    },
+    "improveEfficiency": {
+      "title": "Improve Efficiency",
+      "description": "All business functions in one app. Offline capability means no downtime. Automated processes save hours."
+    }
+  },
+  "useCases": {
+    "title": "Perfect For",
+    "subtitle": "Stokily works for businesses of all types and sizes",
+    "retail": {
+      "title": "Retail Stores",
+      "description": "Complete inventory management, fast POS checkout, customer management, and sales tracking—everything you need to run a modern retail store."
+    },
+    "pharmacy": {
+      "title": "Pharmacies",
+      "description": "Product variant support, detailed tracking, professional invoicing, and compliance-ready features for pharmaceutical businesses."
+    },
+    "restaurant": {
+      "title": "Restaurants & Cafes",
+      "description": "Recipe management, ingredient tracking, portion control, and cost calculations for food service businesses."
+    },
+    "ecommerce": {
+      "title": "E-Commerce Businesses",
+      "description": "Create online stores, manage orders, sync inventory, and grow your online presence—all from one platform."
+    },
+    "multilocation": {
+      "title": "Multi-Location Businesses",
+      "description": "Manage multiple stores or locations from one account, with centralized analytics and reporting."
+    },
+    "wholesale": {
+      "title": "Wholesale Operations",
+      "description": "Supplier management, purchase orders, professional invoicing, and B2B features for wholesale businesses."
+    }
+  },
+  "special": {
+    "title": "What Makes Stokily Special",
+    "allInOne": {
+      "title": "All-in-One Solution",
+      "description": "No need for multiple apps. Inventory, POS, e-commerce, and analytics—all in one place."
+    },
+    "offline": {
+      "title": "True Offline Functionality",
+      "description": "Work without internet. Your data syncs automatically when you're back online."
+    },
+    "professional": {
+      "title": "Professional Features",
+      "description": "Barcode scanning, thermal printing, PDF generation—features you'd expect from expensive enterprise software."
+    },
+    "easy": {
+      "title": "Easy to Use",
+      "description": "Beautiful, intuitive interface. Your team will learn it in minutes, not days."
+    },
+    "affordable": {
+      "title": "Affordable",
+      "description": "Enterprise features at a fraction of the cost of traditional POS systems."
+    },
+    "scalable": {
+      "title": "Scalable",
+      "description": "Start small, grow big. Stokily grows with your business."
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Business?",
+    "description": "Stokily is more than software—it's your complete business management partner. Join businesses across Tunisia and beyond who trust Stokily to manage their operations.",
+    "startJourney": "Start your journey today and experience the difference."
+  },
+  "footer": {
+    "description": "Complete business management solution combining inventory control, point-of-sale, e-commerce, and analytics in one powerful platform.",
+    "features": "Features",
+    "quickLinks": "Quick Links",
+    "privacy": "Privacy Policy",
+    "tagline": "Stokily - Where Business Management Meets Innovation",
+    "rights": "All rights reserved"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "Stokily Privacy Policy - Learn how we collect, use, and protect your data.",
+    "backToHome": "Back to Home",
+    "lastUpdated": "Last Updated: January 2026",
+    "sections": {
+      "introduction": {
+        "title": "1. Introduction",
+        "paragraph1": "Welcome to Stokily. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and services.",
+        "paragraph2": "By using Stokily, you agree to the collection and use of information in accordance with this policy. If you do not agree with our policies and practices, please do not use our application."
+      },
+      "informationWeCollect": {
+        "title": "2. Information We Collect",
+        "accountInfo": {
+          "title": "2.1 Account Information",
+          "content": "When you create an account, we collect your email address, password (encrypted), full name, and phone number for authentication and account management."
+        },
+        "businessData": {
+          "title": "2.2 Business Data",
+          "content": "We collect your company information, product catalog, inventory data, sales transactions, customer and supplier information, financial records (expenses and contributions), and employee data to provide our inventory and POS management services."
+        },
+        "deviceInfo": {
+          "title": "2.3 Device Information",
+          "content": "We automatically collect device information, app usage data, network information, and crash reports to improve app stability and performance."
+        }
+      },
+      "permissions": {
+        "title": "3. Permissions We Request",
+        "items": [
+          {
+            "name": "Camera",
+            "description": "To scan barcodes for quick product entry and POS checkout."
+          },
+          {
+            "name": "Photo Library",
+            "description": "To upload product images, company logos, and attach receipts/documents."
+          },
+          {
+            "name": "Microphone",
+            "description": "For video recording features (if used)."
+          },
+          {
+            "name": "Location",
+            "description": "To discover Bluetooth printers in your vicinity."
+          },
+          {
+            "name": "Bluetooth",
+            "description": "To connect to thermal printers for receipt printing."
+          },
+          {
+            "name": "Storage",
+            "description": "To save PDF invoices, reports, and export data."
+          }
+        ]
+      },
+      "howWeUse": {
+        "title": "4. How We Use Your Information",
+        "content": "We use your information to provide, maintain, and improve our services, manage your account, sync data across devices, process transactions, generate reports, communicate with you, and ensure security. We do not sell your personal information."
+      },
+      "dataStorage": {
+        "title": "5. Data Storage and Security",
+        "content": "Your data is stored securely using Firebase (Google) for cloud storage and authentication. We implement encryption, secure authentication, and access controls. Data is retained while your account is active and can be deleted at any time."
+      },
+      "yourRights": {
+        "title": "6. Your Rights",
+        "content": "You have the right to access, update, correct, and delete your data. You can export your data, control app permissions through device settings, and delete your account at any time."
+      },
+      "thirdParty": {
+        "title": "7. Third-Party Services",
+        "content": "We use Firebase (Google) for authentication, database, and storage; Cloudinary for image processing; and thermal printers for receipt printing. These services have their own privacy policies."
+      },
+      "contactUs": {
+        "title": "8. Contact Us",
+        "content": "If you have questions about this Privacy Policy, please contact us at",
+        "or": "or through the app support."
+      }
+    },
+    "consent": "By using Stokily, you consent to our Privacy Policy and agree to its terms."
+  }
+}
+

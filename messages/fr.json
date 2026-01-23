@@ -1,0 +1,260 @@
+{
+  "nav": {
+    "features": "Fonctionnalités",
+    "benefits": "Avantages",
+    "useCases": "Cas d'usage",
+    "downloadApp": "Télécharger l'application"
+  },
+  "hero": {
+    "title": "Stokily",
+    "subtitle": "Transformez votre entreprise avec une gestion tout-en-un",
+    "description": "Solution complète de gestion d'entreprise combinant le contrôle des stocks, le point de vente, le commerce électronique et l'analyse dans une plateforme puissante. Fonctionne complètement hors ligne. Parfait pour les magasins de détail, les pharmacies, les restaurants et les boutiques en ligne.",
+    "downloadAppStore": "Télécharger sur l'App Store",
+    "downloadPlayStore": "Disponible sur Google Play",
+    "worksOffline": "Fonctionne hors ligne",
+    "barcodeScanning": "Scan de codes-barres",
+    "multiLanguage": "Multi-langue"
+  },
+  "whyStokily": {
+    "title": "Pourquoi Stokily ?",
+    "description": "Stokily est la solution complète de gestion d'entreprise qui combine le contrôle des stocks, le point de vente, le commerce électronique et l'analyse dans une plateforme puissante. Que vous dirigiez un magasin de détail, une pharmacie, un restaurant ou une boutique en ligne, Stokily vous donne tout ce dont vous avez besoin pour gérer votre entreprise efficacement—même lorsque vous êtes hors ligne."
+  },
+  "features": {
+    "title": "Fonctionnalités principales",
+    "subtitle": "Tout ce dont vous avez besoin pour gérer votre entreprise efficacement",
+    "stockManagement": {
+      "title": "Gestion des stocks",
+      "description": "Contrôle complet des stocks à portée de main. Suivez les niveaux de stock en temps réel, recevez des alertes de stock faible, supportez les variantes de produits et consultez l'historique complet des stocks.",
+      "realTime": "Suivi des stocks en temps réel",
+      "alerts": "Alertes de stock faible",
+      "variants": "Support des variantes de produits"
+    },
+    "pos": {
+      "title": "Point de vente (POS)",
+      "description": "Encaissement ultra-rapide qui satisfait les clients. Le scan de codes-barres rend l'encaissement 10 fois plus rapide que la saisie manuelle.",
+      "barcode": "Scan de codes-barres",
+      "autoDeduction": "Déduction automatique des stocks",
+      "receipt": "Impression de reçus thermiques"
+    },
+    "invoicing": {
+      "title": "Facturation professionnelle",
+      "description": "Créez et gérez des factures comme un pro. Générez des factures professionnelles avec la marque de votre entreprise et exportez en PDF.",
+      "pdf": "Export PDF",
+      "tracking": "Suivi du statut de paiement",
+      "numbering": "Numérotation automatique"
+    },
+    "ecommerce": {
+      "title": "Créateur de site e-commerce",
+      "description": "Créez votre boutique en ligne en quelques minutes—aucun codage requis. Transformez votre inventaire en une belle boutique en ligne.",
+      "oneClick": "Création de site en un clic",
+      "autoSync": "Synchronisation automatique des produits",
+      "responsive": "Design responsive mobile"
+    },
+    "customers": {
+      "title": "Gestion des clients",
+      "description": "Construisez des relations durables avec vos clients. Suivez l'historique des achats, consultez les statistiques des clients et identifiez vos meilleurs clients.",
+      "database": "Base de données clients complète",
+      "history": "Suivi de l'historique des achats",
+      "lifetime": "Valeur vie client"
+    },
+    "analytics": {
+      "title": "Analyse commerciale",
+      "description": "Prenez des décisions basées sur les données avec des insights puissants. Suivez les revenus, les performances des ventes, la santé des stocks et les performances des produits.",
+      "revenue": "Suivi des revenus",
+      "performance": "Performance des produits",
+      "dashboards": "Tableaux de bord en temps réel"
+    }
+  },
+  "technical": {
+    "title": "Fonctionnalités techniques puissantes",
+    "subtitle": "Fonctionnalités de niveau entreprise qui rendent Stokily spécial",
+    "offline": {
+      "title": "Fonctionne complètement hors ligne",
+      "description": "Ne perdez jamais une vente à cause de problèmes d'internet. Fonctionnalité complète sans connexion internet. Toutes les fonctionnalités fonctionnent hors ligne avec synchronisation automatique lorsque la connexion est rétablie.",
+      "why": "Pourquoi c'est important : Internet peut être peu fiable. Avec Stokily, votre entreprise ne s'arrête jamais."
+    },
+    "barcode": {
+      "title": "Scan de codes-barres professionnel",
+      "description": "Système de codes-barres de niveau industriel. Scannez les produits instantanément avec l'appareil photo de votre téléphone. Prend en charge tous les formats majeurs : EAN, UPC, codes QR. Le scan rapide rend l'encaissement 10 fois plus rapide.",
+      "why": "Pourquoi c'est important : Accélérez l'encaissement, réduisez les erreurs, concurrencez avec les grands détaillants."
+    },
+    "printing": {
+      "title": "Impression de reçus thermiques",
+      "description": "Reçus professionnels pour vos clients. Support des imprimantes Bluetooth, USB et réseau. Génération automatique de reçus avec marque de l'entreprise.",
+      "why": "Pourquoi c'est important : Image professionnelle, satisfaction client, conformité légale."
+    },
+    "multilang": {
+      "title": "Support multi-langue",
+      "description": "Parlez la langue de vos clients. Anglais, français et arabe avec support RTL (de droite à gauche). Changement de langue facile avec formats de date et d'heure localisés.",
+      "why": "Pourquoi c'est important : Servez des clients diversifiés, développez-vous sur de nouveaux marchés."
+    }
+  },
+  "benefits": {
+    "title": "Avantages commerciaux",
+    "subtitle": "Découvrez comment Stokily transforme vos opérations commerciales",
+    "saveTime": {
+      "title": "Gagnez du temps",
+      "description": "Encaissement 10 fois plus rapide avec le scan de codes-barres. Mises à jour automatiques des stocks. Génération rapide de factures. Rapports instantanés."
+    },
+    "reduceErrors": {
+      "title": "Réduisez les erreurs",
+      "description": "Le scan de codes-barres élimine les erreurs de frappe. Calculs automatiques. Validation des stocks empêche la survente."
+    },
+    "increaseRevenue": {
+      "title": "Augmentez les revenus",
+      "description": "Ne perdez jamais une vente à cause de produits manquants. Image professionnelle attire les clients. Meilleure gestion des stocks."
+    },
+    "improveEfficiency": {
+      "title": "Améliorez l'efficacité",
+      "description": "Toutes les fonctions commerciales dans une seule application. Capacité hors ligne signifie aucun temps d'arrêt. Processus automatisés économisent des heures."
+    }
+  },
+  "useCases": {
+    "title": "Parfait pour",
+    "subtitle": "Stokily fonctionne pour les entreprises de tous types et tailles",
+    "retail": {
+      "title": "Magasins de détail",
+      "description": "Gestion complète des stocks, encaissement POS rapide, gestion des clients et suivi des ventes—tout ce dont vous avez besoin pour gérer un magasin de détail moderne."
+    },
+    "pharmacy": {
+      "title": "Pharmacies",
+      "description": "Support des variantes de produits, suivi détaillé, facturation professionnelle et fonctionnalités conformes pour les entreprises pharmaceutiques."
+    },
+    "restaurant": {
+      "title": "Restaurants et cafés",
+      "description": "Gestion des recettes, suivi des ingrédients, contrôle des portions et calculs des coûts pour les entreprises de restauration."
+    },
+    "ecommerce": {
+      "title": "Entreprises e-commerce",
+      "description": "Créez des boutiques en ligne, gérez les commandes, synchronisez les stocks et développez votre présence en ligne—tout depuis une seule plateforme."
+    },
+    "multilocation": {
+      "title": "Entreprises multi-sites",
+      "description": "Gérez plusieurs magasins ou emplacements depuis un seul compte, avec des analyses et rapports centralisés."
+    },
+    "wholesale": {
+      "title": "Opérations de gros",
+      "description": "Gestion des fournisseurs, commandes d'achat, facturation professionnelle et fonctionnalités B2B pour les entreprises de gros."
+    }
+  },
+  "special": {
+    "title": "Ce qui rend Stokily spécial",
+    "allInOne": {
+      "title": "Solution tout-en-un",
+      "description": "Pas besoin de plusieurs applications. Stocks, POS, e-commerce et analyses—tout en un seul endroit."
+    },
+    "offline": {
+      "title": "Vraie fonctionnalité hors ligne",
+      "description": "Travaillez sans internet. Vos données se synchronisent automatiquement lorsque vous êtes de retour en ligne."
+    },
+    "professional": {
+      "title": "Fonctionnalités professionnelles",
+      "description": "Scan de codes-barres, impression thermique, génération PDF—fonctionnalités que vous attendez d'un logiciel d'entreprise coûteux."
+    },
+    "easy": {
+      "title": "Facile à utiliser",
+      "description": "Interface belle et intuitive. Votre équipe l'apprendra en quelques minutes, pas en quelques jours."
+    },
+    "affordable": {
+      "title": "Abordable",
+      "description": "Fonctionnalités d'entreprise à une fraction du coût des systèmes POS traditionnels."
+    },
+    "scalable": {
+      "title": "Évolutif",
+      "description": "Commencez petit, grandissez. Stokily grandit avec votre entreprise."
+    }
+  },
+  "cta": {
+    "title": "Prêt à transformer votre entreprise ?",
+    "description": "Stokily est plus qu'un logiciel—c'est votre partenaire complet de gestion d'entreprise. Rejoignez les entreprises en Tunisie et au-delà qui font confiance à Stokily pour gérer leurs opérations.",
+    "startJourney": "Commencez votre voyage aujourd'hui et ressentez la différence."
+  },
+  "footer": {
+    "description": "Solution complète de gestion d'entreprise combinant le contrôle des stocks, le point de vente, le commerce électronique et l'analyse dans une plateforme puissante.",
+    "features": "Fonctionnalités",
+    "quickLinks": "Liens rapides",
+    "privacy": "Politique de confidentialité",
+    "tagline": "Stokily - Où la gestion d'entreprise rencontre l'innovation",
+    "rights": "Tous droits réservés"
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "description": "Politique de confidentialité de Stokily - Découvrez comment nous collectons, utilisons et protégeons vos données.",
+    "backToHome": "Retour à l'accueil",
+    "lastUpdated": "Dernière mise à jour : Janvier 2026",
+    "sections": {
+      "introduction": {
+        "title": "1. Introduction",
+        "paragraph1": "Bienvenue sur Stokily. Nous nous engageons à protéger votre vie privée et à assurer la sécurité de vos informations personnelles. Cette Politique de confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous utilisez notre application mobile et nos services.",
+        "paragraph2": "En utilisant Stokily, vous acceptez la collecte et l'utilisation d'informations conformément à cette politique. Si vous n'êtes pas d'accord avec nos politiques et pratiques, veuillez ne pas utiliser notre application."
+      },
+      "informationWeCollect": {
+        "title": "2. Informations que nous collectons",
+        "accountInfo": {
+          "title": "2.1 Informations de compte",
+          "content": "Lorsque vous créez un compte, nous collectons votre adresse e-mail, votre mot de passe (crypté), votre nom complet et votre numéro de téléphone pour l'authentification et la gestion du compte."
+        },
+        "businessData": {
+          "title": "2.2 Données commerciales",
+          "content": "Nous collectons les informations de votre entreprise, le catalogue de produits, les données d'inventaire, les transactions de vente, les informations sur les clients et les fournisseurs, les dossiers financiers (dépenses et contributions) et les données des employés pour fournir nos services de gestion d'inventaire et de point de vente."
+        },
+        "deviceInfo": {
+          "title": "2.3 Informations sur l'appareil",
+          "content": "Nous collectons automatiquement les informations sur l'appareil, les données d'utilisation de l'application, les informations réseau et les rapports de plantage pour améliorer la stabilité et les performances de l'application."
+        }
+      },
+      "permissions": {
+        "title": "3. Autorisations que nous demandons",
+        "items": [
+          {
+            "name": "Caméra",
+            "description": "Pour scanner les codes-barres pour la saisie rapide de produits et la caisse POS."
+          },
+          {
+            "name": "Bibliothèque de photos",
+            "description": "Pour télécharger des images de produits, des logos d'entreprise et joindre des reçus/documents."
+          },
+          {
+            "name": "Microphone",
+            "description": "Pour les fonctionnalités d'enregistrement vidéo (si utilisé)."
+          },
+          {
+            "name": "Localisation",
+            "description": "Pour découvrir les imprimantes Bluetooth à proximité."
+          },
+          {
+            "name": "Bluetooth",
+            "description": "Pour se connecter aux imprimantes thermiques pour l'impression de reçus."
+          },
+          {
+            "name": "Stockage",
+            "description": "Pour enregistrer les factures PDF, les rapports et exporter les données."
+          }
+        ]
+      },
+      "howWeUse": {
+        "title": "4. Comment nous utilisons vos informations",
+        "content": "Nous utilisons vos informations pour fournir, maintenir et améliorer nos services, gérer votre compte, synchroniser les données entre les appareils, traiter les transactions, générer des rapports, communiquer avec vous et assurer la sécurité. Nous ne vendons pas vos informations personnelles."
+      },
+      "dataStorage": {
+        "title": "5. Stockage et sécurité des données",
+        "content": "Vos données sont stockées en toute sécurité en utilisant Firebase (Google) pour le stockage cloud et l'authentification. Nous mettons en œuvre le cryptage, l'authentification sécurisée et les contrôles d'accès. Les données sont conservées tant que votre compte est actif et peuvent être supprimées à tout moment."
+      },
+      "yourRights": {
+        "title": "6. Vos droits",
+        "content": "Vous avez le droit d'accéder, de mettre à jour, de corriger et de supprimer vos données. Vous pouvez exporter vos données, contrôler les autorisations de l'application via les paramètres de l'appareil et supprimer votre compte à tout moment."
+      },
+      "thirdParty": {
+        "title": "7. Services tiers",
+        "content": "Nous utilisons Firebase (Google) pour l'authentification, la base de données et le stockage ; Cloudinary pour le traitement d'images ; et les imprimantes thermiques pour l'impression de reçus. Ces services ont leurs propres politiques de confidentialité."
+      },
+      "contactUs": {
+        "title": "8. Contactez-nous",
+        "content": "Si vous avez des questions concernant cette Politique de confidentialité, veuillez nous contacter à",
+        "or": "ou via le support de l'application."
+      }
+    },
+    "consent": "En utilisant Stokily, vous acceptez notre Politique de confidentialité et acceptez ses conditions."
+  }
+}
+
