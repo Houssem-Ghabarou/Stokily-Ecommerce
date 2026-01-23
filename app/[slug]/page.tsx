@@ -85,10 +85,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
   
-  // For store pages, return default metadata (handled by layout)
-  return {
-    title: "Store",
-  };
+  // For store pages, return empty metadata so layout's generateMetadata is used
+  // The layout will handle all store-specific SEO metadata
+  return {};
 }
 
 export default async function StorePage({ params }: PageProps) {
