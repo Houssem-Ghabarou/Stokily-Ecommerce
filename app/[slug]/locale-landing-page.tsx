@@ -3,6 +3,7 @@ import Image from "next/image";
 import { getDictionary } from "@/lib/translations";
 import { type Locale, isValidLocale } from "@/lib/i18n";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import MobileNav from "@/components/MobileNav";
 
 // App Store URLs
 const APP_STORE_URL =
@@ -20,7 +21,7 @@ export default async function LocaleLandingPage({ locale }: { locale: Locale }) 
   return (
     <main className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+      <nav className="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-3">
@@ -53,6 +54,8 @@ export default async function LocaleLandingPage({ locale }: { locale: Locale }) 
                 {dict.nav.downloadApp}
               </a>
             </div>
+            {/* Mobile Navigation */}
+            <MobileNav dict={dict} appStoreUrl={APP_STORE_URL} locale={locale} />
           </div>
         </div>
       </nav>
