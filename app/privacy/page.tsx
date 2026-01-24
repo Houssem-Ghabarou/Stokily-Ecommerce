@@ -100,6 +100,11 @@ export default function PrivacyPage() {
                 entry and POS checkout.
               </li>
               <li>
+                <strong>Push Notifications:</strong> To send you order updates, account
+                alerts, and important service messages. You can manage notification
+                permissions from your device settings.
+              </li>
+              <li>
                 <strong>Photo Library:</strong> To upload product images,
                 company logos, and attach receipts/documents.
               </li>

@@ -211,6 +211,10 @@
             "description": "Pour scanner les codes-barres pour la saisie rapide de produits et la caisse POS."
           },
           {
+            "name": "Notifications push",
+            "description": "Pour vous envoyer les mises à jour de commandes, les alertes de compte et les messages de service importants. Vous pouvez gérer les notifications dans les paramètres de votre appareil."
+          },
+          {
             "name": "Bibliothèque de photos",
             "description": "Pour télécharger des images de produits, des logos d'entreprise et joindre des reçus/documents."
           },

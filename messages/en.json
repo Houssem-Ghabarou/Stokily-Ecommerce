@@ -211,6 +211,10 @@
             "description": "To scan barcodes for quick product entry and POS checkout."
           },
           {
+            "name": "Push Notifications",
+            "description": "To send you order updates, account alerts, and important service messages. You can manage notification permissions from your device settings."
+          },
+          {
             "name": "Photo Library",
             "description": "To upload product images, company logos, and attach receipts/documents."
           },
