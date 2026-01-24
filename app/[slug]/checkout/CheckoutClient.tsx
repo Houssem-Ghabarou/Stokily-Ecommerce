@@ -21,9 +21,7 @@ interface CheckoutFormData {
   customerName: string;
   customerEmail: string;
   customerPhone: string;
-  street: string;
-  city: string;
-  postalCode: string;
+  deliveryAddress: string;
   customerNotes: string;
 }
 
@@ -82,12 +80,8 @@ export default function CheckoutClient({ config, categories, slug }: CheckoutCli
         customerName: data.customerName,
         customerEmail: data.customerEmail,
         customerPhone: data.customerPhone || undefined,
-        shippingAddress: data.street
-          ? {
-              street: data.street,
-              city: data.city,
-              postalCode: data.postalCode || undefined,
-            }
+        shippingAddress: data.deliveryAddress?.trim()
+          ? { street: data.deliveryAddress.trim() }
           : undefined,
         items: cart.items.map((item) => ({
           productId: item.productId,
@@ -271,49 +265,16 @@ export default function CheckoutClient({ config, categories, slug }: CheckoutCli
                   </div>
                 </div>
 
-                {/* Shipping Address */}
+                {/* Delivery Address */}
                 <div className="bg-white rounded-xl p-6 shadow-sm">
-                  <h2 className="text-lg font-bold mb-4">Shipping Address</h2>
+                  <h2 className="text-lg font-bold mb-4">Delivery Address</h2>
 
-                  <div className="space-y-4">
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Street Address
-                      </label>
-                      <input
-                        type="text"
-                        {...register("street")}
-                        className="input"
-                        placeholder="123 Main Street"
-                      />
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-4">
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-1">
-                          City
-                        </label>
-                        <input
-                          type="text"
-                          {...register("city")}
-                          className="input"
-                          placeholder="Tunis"
-                        />
-                      </div>
-
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-1">
-                          Postal Code
-                        </label>
-                        <input
-                          type="text"
-                          {...register("postalCode")}
-                          className="input"
-                          placeholder="1000"
-                        />
-                      </div>
-                    </div>
-                  </div>
+                  <textarea
+                    {...register("deliveryAddress")}
+                    rows={2}
+                    className="input"
+                    placeholder="Enter your full delivery address..."
+                  />
                 </div>
 
                 {/* Notes */}
