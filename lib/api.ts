@@ -94,7 +94,7 @@ export interface CreateOrderRequest {
   customerPhone?: string;
   shippingAddress?: {
     street: string;
-    city: string;
+    city?: string;
     postalCode?: string;
     country?: string;
   };

@@ -83,9 +83,6 @@ export default function CheckoutClient({ config, categories, slug }: CheckoutCli
         shippingAddress: data.deliveryAddress?.trim()
           ? {
               street: data.deliveryAddress.trim(),
-              // City is required in the type but not collected in the form,
-              // so we send an empty string as a safe fallback.
-              city: "",
             }
           : undefined,
         items: cart.items.map((item) => ({
