@@ -259,6 +259,55 @@
       }
     },
     "consent": "By using Stokily, you consent to our Privacy Policy and agree to its terms."
+  },
+  "accountDeletion": {
+    "title": "Account Deletion",
+    "description": "Learn how to request deletion of your Stokily account and understand what data is deleted or retained.",
+    "backToHome": "Back to Home",
+    "lastUpdated": "Last Updated: January 2026",
+    "sections": {
+      "introduction": {
+        "title": "1. Overview",
+        "content": "Stokily allows you to create a personal account that can be used to access the Stokily mobile application and related services (including your connected e-commerce website). This page explains how you can request deletion of your Stokily account and what happens to your data when you do so."
+      },
+      "howToRequest": {
+        "title": "2. How to request deletion",
+        "content": "To request that your Stokily account and associated data be deleted, please contact us using the email address that is linked to your Stokily account.",
+        "steps": [
+          "Send an email to privacy@stokily.com with the subject line \"Stokily account deletion request\".",
+          "In the email, include the email address of your Stokily account and clearly state that you want your account deleted.",
+          "If you own one or more stores/companies inside Stokily, indicate whether you want those stores and all of their data to be deleted as well."
+        ]
+      },
+      "whatWeDelete": {
+        "title": "3. What will be deleted",
+        "intro": "When we process an account deletion request and it is approved, we will permanently delete or anonymize:",
+        "items": [
+          "Your Stokily login account (email address, encrypted password, authentication identifiers, and profile information such as your name and phone number).",
+          "Stores/companies that you own and explicitly ask us to delete, including their products, stock, invoices, tickets, and other business configuration data (unless we are required by law to retain specific records).",
+          "E-commerce sites that are solely linked to the deleted companies, along with their configuration data.",
+          "Active authentication tokens and notification tokens associated with your account."
+        ]
+      },
+      "whatWeKeep": {
+        "title": "4. What may be retained",
+        "intro": "In some cases we may need to retain limited information even after your account is deleted:",
+        "items": [
+          "Transaction records (such as invoices, receipts, and accounting documents) that we are required to keep for tax, accounting, or other legal obligations. These records are retained only for as long as applicable law requires and may be kept for up to 10 years in some jurisdictions.",
+          "Security, audit, and anti-fraud logs that are necessary to protect our services and other users. These logs are retained only for as long as needed for those purposes and are then deleted or anonymized.",
+          "Aggregated or anonymized statistics that cannot be used to identify you personally."
+        ]
+      },
+      "timeline": {
+        "title": "5. Deletion timeline",
+        "content": "We aim to process verified account deletion requests within 30 days. In some cases (for example, if we must also delete or transfer ownership of existing stores/companies or comply with specific legal obligations), the process may take longer. We will inform you if additional time is required."
+      },
+      "contact": {
+        "title": "6. Contact",
+        "content": "If you have questions about how account deletion works in Stokily or if you experience any issues with your deletion request, please contact us at",
+        "or": "or through the app support."
+      }
+    }
   }
 }
 

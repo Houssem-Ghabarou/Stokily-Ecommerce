@@ -259,6 +259,55 @@
       }
     },
     "consent": "En utilisant Stokily, vous acceptez notre Politique de confidentialité et acceptez ses conditions."
+  },
+  "accountDeletion": {
+    "title": "Suppression de compte",
+    "description": "Découvrez comment demander la suppression de votre compte Stokily et comprendre quelles données sont supprimées ou conservées.",
+    "backToHome": "Retour à l'accueil",
+    "lastUpdated": "Dernière mise à jour : Janvier 2026",
+    "sections": {
+      "introduction": {
+        "title": "1. Vue d'ensemble",
+        "content": "Stokily vous permet de créer un compte personnel utilisé pour accéder à l'application mobile Stokily et aux services associés (y compris votre site e-commerce connecté). Cette page explique comment vous pouvez demander la suppression de votre compte Stokily et ce qui arrive à vos données lorsque vous le faites."
+      },
+      "howToRequest": {
+        "title": "2. Comment demander la suppression",
+        "content": "Pour demander la suppression de votre compte Stokily et des données associées, veuillez nous contacter en utilisant l'adresse e-mail liée à votre compte Stokily.",
+        "steps": [
+          "Envoyez un e-mail à privacy@stokily.com avec l'objet \"Demande de suppression de compte Stokily\".",
+          "Dans l'e-mail, indiquez l'adresse e-mail de votre compte Stokily et précisez clairement que vous souhaitez supprimer votre compte.",
+          "Si vous possédez un ou plusieurs magasins/entreprises dans Stokily, précisez si vous souhaitez également supprimer ces magasins et toutes leurs données."
+        ]
+      },
+      "whatWeDelete": {
+        "title": "3. Ce qui sera supprimé",
+        "intro": "Lorsque nous traitons une demande de suppression de compte et qu'elle est approuvée, nous supprimons ou anonymisons définitivement :",
+        "items": [
+          "Votre compte de connexion Stokily (adresse e-mail, mot de passe chiffré, identifiants d'authentification et informations de profil telles que votre nom et votre numéro de téléphone).",
+          "Les magasins/entreprises que vous possédez et que vous nous demandez explicitement de supprimer, y compris leurs produits, stocks, factures, tickets et autres données de configuration métier (sauf si la loi nous oblige à conserver certains enregistrements).",
+          "Les sites e-commerce liés uniquement aux entreprises supprimées, ainsi que leurs données de configuration.",
+          "Les jetons d'authentification actifs et les jetons de notification associés à votre compte."
+        ]
+      },
+      "whatWeKeep": {
+        "title": "4. Ce qui peut être conservé",
+        "intro": "Dans certains cas, nous pouvons devoir conserver des informations limitées même après la suppression de votre compte :",
+        "items": [
+          "Les enregistrements de transactions (tels que les factures, reçus et documents comptables) que nous sommes tenus de conserver pour des obligations fiscales, comptables ou légales. Ces enregistrements sont conservés uniquement pendant la durée exigée par la loi applicable et peuvent être conservés jusqu'à 10 ans dans certaines juridictions.",
+          "Les journaux de sécurité, d'audit et de lutte contre la fraude nécessaires pour protéger nos services et les autres utilisateurs. Ces journaux sont conservés uniquement pendant la durée nécessaire à ces finalités puis supprimés ou anonymisés.",
+          "Les statistiques agrégées ou anonymisées qui ne permettent pas de vous identifier personnellement."
+        ]
+      },
+      "timeline": {
+        "title": "5. Délai de suppression",
+        "content": "Nous visons à traiter les demandes vérifiées de suppression de compte dans un délai de 30 jours. Dans certains cas (par exemple, si nous devons également supprimer ou transférer la propriété de magasins/entreprises existants ou respecter des obligations légales spécifiques), le processus peut prendre plus de temps. Nous vous informerons si un délai supplémentaire est nécessaire."
+      },
+      "contact": {
+        "title": "6. Contact",
+        "content": "Si vous avez des questions sur la manière dont la suppression de compte fonctionne dans Stokily ou si vous rencontrez des problèmes avec votre demande de suppression, veuillez nous contacter à",
+        "or": "ou via le support de l'application."
+      }
+    }
   }
 }
 
