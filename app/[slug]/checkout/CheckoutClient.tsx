@@ -81,9 +81,16 @@ export default function CheckoutClient({ config, categories, slug }: CheckoutCli
         customerEmail: data.customerEmail,
         customerPhone: data.customerPhone || undefined,
         shippingAddress: data.deliveryAddress?.trim()
-          ? {
-              street: data.deliveryAddress.trim(),
-            }
+          ? (() => {
+              const address = data.deliveryAddress.trim();
+              return {
+                // Single address field from the checkout form
+                street: address,
+                // Fallback for backends that still expect a non-empty city field.
+                // Newer backends treat city as optional, so this is safe.
+                city: address,
+              };
+            })()
           : undefined,
         items: cart.items.map((item) => ({
           productId: item.productId,
