@@ -681,6 +681,14 @@ export default async function LocaleLandingPage({ locale }: { locale: Locale }) 
                 <span className="text-xl font-bold text-white">{dict.hero.title}</span>
               </div>
               <p className="text-sm mb-4">{dict.footer.description}</p>
+              <p className="text-sm">
+                <a
+                  href="mailto:contact@stokily.com"
+                  className="text-gray-300 hover:text-white underline"
+                >
+                  contact@stokily.com
+                </a>
+              </p>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-4">{dict.footer.features}</h3>
