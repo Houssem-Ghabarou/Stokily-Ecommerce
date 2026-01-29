@@ -11,9 +11,11 @@
     "description": "Complete business management solution combining inventory control, point-of-sale, e-commerce, and analytics in one powerful platform. Works completely offline. Perfect for retail stores, pharmacies, restaurants, and online shops.",
     "downloadAppStore": "Download on the App Store",
     "downloadPlayStore": "Get it on Google Play",
+    "downloadModalTitle": "Download the app",
     "worksOffline": "Works Offline",
     "barcodeScanning": "Barcode Scanning",
-    "multiLanguage": "Multi-Language"
+    "multiLanguage": "Multi-Language",
+    "scrollHint": "Discover more"
   },
   "whyStokily": {
     "title": "Why Stokily?",

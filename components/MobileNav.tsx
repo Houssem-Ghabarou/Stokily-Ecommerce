@@ -21,9 +21,10 @@ interface MobileNavProps {
   };
   appStoreUrl: string;
   locale?: string;
+  onOpenDownloadModal?: () => void;
 }
 
-export default function MobileNav({ dict, appStoreUrl, locale = 'fr' }: MobileNavProps) {
+export default function MobileNav({ dict, appStoreUrl, locale = 'fr', onOpenDownloadModal }: MobileNavProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const isRtl = locale === 'ar';
@@ -134,15 +135,28 @@ export default function MobileNav({ dict, appStoreUrl, locale = 'fr' }: MobileNa
 
             {/* Download Button */}
             <div className="mt-6 pt-6 border-t border-gray-200 px-4">
-              <a
-                href={appStoreUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={closeSidebar}
-                className="block w-full bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-700 transition-colors text-center font-semibold"
-              >
-                {dict.nav.downloadApp}
-              </a>
+              {onOpenDownloadModal ? (
+                <button
+                  type="button"
+                  onClick={() => {
+                    onOpenDownloadModal();
+                    closeSidebar();
+                  }}
+                  className="block w-full bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-700 transition-colors text-center font-semibold"
+                >
+                  {dict.nav.downloadApp}
+                </button>
+              ) : (
+                <a
+                  href={appStoreUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={closeSidebar}
+                  className="block w-full bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-700 transition-colors text-center font-semibold"
+                >
+                  {dict.nav.downloadApp}
+                </a>
+              )}
             </div>
           </nav>
         </div>

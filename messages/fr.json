@@ -11,9 +11,11 @@
     "description": "Solution complète de gestion d'entreprise combinant le contrôle des stocks, le point de vente, le commerce électronique et l'analyse dans une plateforme puissante. Fonctionne complètement hors ligne. Parfait pour les magasins de détail, les pharmacies, les restaurants et les boutiques en ligne.",
     "downloadAppStore": "Télécharger sur l'App Store",
     "downloadPlayStore": "Disponible sur Google Play",
+    "downloadModalTitle": "Télécharger l'application",
     "worksOffline": "Fonctionne hors ligne",
     "barcodeScanning": "Scan de codes-barres",
-    "multiLanguage": "Multi-langue"
+    "multiLanguage": "Multi-langue",
+    "scrollHint": "Découvrir plus"
   },
   "whyStokily": {
     "title": "Pourquoi Stokily ?",
