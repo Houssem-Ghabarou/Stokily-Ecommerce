@@ -94,7 +94,12 @@ h4 { @apply text-xl md:text-2xl font-semibold; }
 .btn-outline {
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
-  @apply hover:bg-accent-light hover:border-primary;
+  background: transparent;
+  transition: all 200ms;
+}
+
+.btn-outline:hover {
+  background-color: var(--accent-light);
 }
 
 /* Card styles */
