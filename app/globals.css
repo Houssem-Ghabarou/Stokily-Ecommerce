@@ -2,13 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Sohne:wght@400;500;600&display=swap');
+
 :root {
-  --primary-color: #3B82F6;
-  --secondary-color: #1F2937;
-  --background: #ffffff;
-  --foreground: #171717;
-  --font-heading: 'Poppins', system-ui, sans-serif;
-  --font-body: 'Inter', system-ui, sans-serif;
+  /* Premium Color Palette */
+  --primary-color: #8B6F47;
+  --secondary-color: #1a1a1a;
+  --background: #faf8f5;
+  --foreground: #2d2d2d;
+  --accent: #c9a876;
+  --accent-light: #e8dcc8;
+  --border-color: #d4cfc8;
+  
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Sohne', system-ui, sans-serif;
 }
 
 body {
@@ -17,13 +25,16 @@ body {
   background: var(--background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.3px;
 }
 
 /* Typography - Apply fonts to all headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+  color: var(--secondary-color);
 }
 
 /* Apply heading font to bold text elements */
@@ -32,10 +43,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
 }
 
-h1 { @apply text-3xl md:text-4xl lg:text-5xl; }
-h2 { @apply text-2xl md:text-3xl; }
-h3 { @apply text-xl md:text-2xl; }
-h4 { @apply text-lg md:text-xl; }
+h1 { @apply text-4xl md:text-5xl lg:text-6xl font-medium; }
+h2 { @apply text-3xl md:text-4xl font-medium; }
+h3 { @apply text-2xl md:text-3xl font-medium; }
+h4 { @apply text-xl md:text-2xl font-medium; }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
@@ -44,16 +55,16 @@ h4 { @apply text-lg md:text-xl; }
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
+  background: var(--border-color);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a8a8a8;
+  background: var(--primary-color);
 }
 
 /* Focus visible styles */
@@ -64,63 +75,81 @@ h4 { @apply text-lg md:text-xl; }
 
 /* Button base styles */
 .btn {
-  @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium transition-colors duration-200;
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-none font-medium transition-all duration-300 text-sm uppercase tracking-wider;
 }
 
 .btn-primary {
-  @apply bg-primary text-white hover:opacity-90;
+  background-color: var(--primary-color);
+  color: white;
+  @apply hover:opacity-80 active:scale-95;
 }
 
 .btn-secondary {
-  @apply bg-secondary text-white hover:opacity-90;
+  background-color: var(--secondary-color);
+  color: white;
+  @apply hover:opacity-80 active:scale-95;
 }
 
 .btn-outline {
-  @apply border-2 border-primary text-primary hover:bg-primary hover:text-white;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  @apply hover:bg-primary hover:text-white;
 }
 
 /* Card styles */
 .card {
-  @apply bg-white rounded-xl shadow-sm border border-gray-100;
+  @apply bg-white rounded-none shadow-sm border;
+  border-color: var(--border-color);
 }
 
 /* Input styles */
 .input {
-  @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors;
+  @apply w-full px-4 py-3 border rounded-none transition-colors font-body;
+  border-color: var(--border-color);
+  background: white;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
 }
 
 /* Badge styles */
 .badge {
-  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  @apply inline-flex items-center px-3 py-1.5 rounded-none text-xs font-medium uppercase tracking-wider;
+  background-color: var(--accent-light);
+  color: var(--primary-color);
 }
 
 .badge-success {
-  @apply bg-green-100 text-green-800;
+  @apply bg-emerald-100 text-emerald-700;
 }
 
 .badge-warning {
-  @apply bg-yellow-100 text-yellow-800;
+  @apply bg-amber-100 text-amber-700;
 }
 
 .badge-error {
-  @apply bg-red-100 text-red-800;
+  @apply bg-red-100 text-red-700;
 }
 
 /* Product badges */
 .product-badge {
-  @apply absolute z-10 px-2 py-1 text-xs font-semibold rounded-md shadow-sm;
+  @apply absolute z-10 px-3 py-2 text-xs font-semibold rounded-none shadow-sm uppercase tracking-wider;
 }
 
 .product-badge-new {
-  @apply bg-emerald-500 text-white;
+  background-color: var(--primary-color);
+  @apply text-white;
 }
 
 .product-badge-sale {
-  @apply bg-red-500 text-white;
+  @apply bg-red-600 text-white;
 }
 
 .product-badge-low-stock {
-  @apply bg-amber-500 text-white;
+  @apply bg-amber-600 text-white;
 }
 
 /* Card hover effects */
@@ -129,7 +158,8 @@ h4 { @apply text-lg md:text-xl; }
 }
 
 .card-hover:hover {
-  @apply -translate-y-1 shadow-lg;
+  @apply shadow-md;
+  border-color: var(--primary-color);
 }
 
 /* Image zoom on hover */
@@ -153,31 +183,45 @@ h4 { @apply text-lg md:text-xl; }
 
 /* Search bar styles */
 .search-input {
-  @apply w-full pl-10 pr-4 py-2.5 bg-gray-50 border border-gray-200 rounded-full
-         text-sm placeholder-gray-400
-         focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-20
+  @apply w-full pl-10 pr-4 py-2.5 bg-white border rounded-none
+         text-sm placeholder-gray-400 font-body
          transition-all duration-200;
+  border-color: var(--border-color);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background: white;
 }
 
 /* Filter pill styles */
 .filter-pill {
-  @apply px-4 py-2 text-sm font-medium rounded-full border transition-all duration-200;
+  @apply px-4 py-2 text-sm font-medium rounded-none border transition-all duration-200;
+  border-color: var(--border-color);
+  color: var(--foreground);
 }
 
 .filter-pill-active {
-  @apply border-transparent text-white;
+  border-color: var(--primary-color);
   background-color: var(--primary-color);
+  @apply text-white;
 }
 
 .filter-pill-inactive {
-  @apply border-gray-200 text-gray-600 hover:border-gray-300 hover:bg-gray-50;
+  @apply hover:bg-gray-50;
+  border-color: var(--border-color);
 }
 
 /* Sort dropdown */
 .sort-select {
-  @apply px-4 py-2 text-sm border border-gray-200 rounded-lg bg-white
-         focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-20
-         transition-all duration-200 cursor-pointer;
+  @apply px-4 py-2 text-sm rounded-none bg-white transition-all duration-200 cursor-pointer font-body;
+  border: 1px solid var(--border-color);
+}
+
+.sort-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
 }
 
 /* Featured section */

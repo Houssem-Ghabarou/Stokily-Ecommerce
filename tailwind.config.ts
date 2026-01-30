@@ -10,10 +10,15 @@ export default {
       colors: {
         primary: "var(--primary-color)",
         secondary: "var(--secondary-color)",
+        accent: "var(--accent)",
+        "accent-light": "var(--accent-light)",
       },
       fontFamily: {
-        heading: ["var(--font-heading)", "system-ui", "sans-serif"],
+        heading: ["var(--font-heading)", "serif"],
         body: ["var(--font-body)", "system-ui", "sans-serif"],
+      },
+      spacing: {
+        '0.5': '2px',
       },
     },
   },

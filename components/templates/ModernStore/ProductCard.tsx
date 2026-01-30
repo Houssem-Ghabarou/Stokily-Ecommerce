@@ -47,7 +47,8 @@ export default function ProductCard({
   return (
     <Link
       href={`/${slug}/products/${product.id}`}
-      className="group card card-hover overflow-hidden"
+      className="group card card-hover overflow-hidden rounded-none"
+      style={{ borderColor: 'var(--border-color)' }}
     >
       {/* Product Image */}
       <div className="relative aspect-square bg-gray-50 overflow-hidden">
@@ -125,8 +126,8 @@ export default function ProductCard({
         {product.inStock && !product.hasVariants && (
           <button
             onClick={handleAddToCart}
-            className="absolute bottom-2 right-2 p-2.5 rounded-full bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-110"
-            style={{ color: primaryColor }}
+            className="absolute bottom-2 right-2 p-2.5 rounded-none bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 hover:opacity-60"
+            style={{ color: 'var(--primary-color)', border: '1px solid var(--border-color)' }}
             title="Add to cart"
           >
             <ShoppingCart className="w-5 h-5" />
@@ -137,8 +138,8 @@ export default function ProductCard({
       {/* Product Info */}
       <div className="p-4">
         <h3 
-          className="font-medium text-gray-900 line-clamp-2 group-hover:text-primary transition-colors min-h-[2.5rem]"
-          style={{ fontFamily: "var(--font-heading), system-ui, sans-serif" }}
+          className="font-medium text-gray-900 line-clamp-2 group-hover:opacity-70 transition-opacity min-h-[2.5rem]"
+          style={{ fontFamily: "var(--font-heading), serif" }}
         >
           {product.name}
         </h3>

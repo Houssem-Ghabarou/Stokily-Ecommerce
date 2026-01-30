@@ -12,14 +12,14 @@ export default function Footer({ config, slug }: FooterProps) {
   const storeUrl = slug ? `/${slug}` : "/";
 
   return (
-    <footer className="bg-gray-900 text-gray-300 mt-auto">
+    <footer className="mt-auto" style={{ backgroundColor: 'var(--secondary-color)', color: '#b3b3b3' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Store Info */}
           <div className="lg:col-span-2">
             <Link href={storeUrl} className="flex items-center gap-3 mb-4">
               {config.logoUrl ? (
-                <div className="relative w-10 h-10 rounded-lg overflow-hidden bg-white/10">
+                <div className="relative w-10 h-10 rounded-none overflow-hidden bg-white/10" style={{ border: '1px solid var(--accent)' }}>
                   <Image
                     src={config.logoUrl}
                     alt={config.storeName}
@@ -30,8 +30,8 @@ export default function Footer({ config, slug }: FooterProps) {
                 </div>
               ) : (
                 <div
-                  className="w-10 h-10 rounded-lg flex items-center justify-center"
-                  style={{ backgroundColor: config.primaryColor }}
+                  className="w-10 h-10 rounded-none flex items-center justify-center"
+                  style={{ backgroundColor: config.primaryColor, border: '1px solid var(--accent)' }}
                 >
                   <Store className="w-5 h-5 text-white" />
                 </div>
@@ -106,16 +106,16 @@ export default function Footer({ config, slug }: FooterProps) {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-gray-500 text-sm">
+        <div className="mt-10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4" style={{ borderTopColor: 'var(--border-color)', borderTopWidth: '1px' }}>
+          <p className="text-sm" style={{ color: '#888888' }}>
             &copy; {new Date().getFullYear()} {config.storeName}. All rights
             reserved.
           </p>
-          <p className="text-gray-600 text-xs">
+          <p className="text-xs" style={{ color: '#777777' }}>
             Powered by{" "}
             <span
               className="font-medium"
-              style={{ color: config.primaryColor }}
+              style={{ color: 'var(--primary-color)' }}
             >
               Stokily
             </span>

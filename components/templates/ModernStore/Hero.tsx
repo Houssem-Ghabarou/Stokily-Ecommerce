@@ -110,12 +110,12 @@ export default function Hero({ config }: HeroProps) {
             } items-center`}>
             <a
               href="#products"
-              className="inline-flex items-center px-8 py-3.5 rounded-full text-white font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="inline-flex items-center px-8 py-3 rounded-none text-white font-medium text-sm transition-all duration-300 hover:opacity-80 uppercase tracking-wider"
               style={{ backgroundColor: config.primaryColor }}
             >
               Shop Now
               <svg
-                className="ml-2 w-5 h-5"
+                className="ml-2 w-4 h-4"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -131,7 +131,7 @@ export default function Hero({ config }: HeroProps) {
             {hasBanner && (
               <a
                 href="#products"
-                className="inline-flex items-center px-8 py-3.5 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-white/20 border-2 border-white/80 text-white"
+                className="inline-flex items-center px-8 py-3 rounded-none font-medium text-sm transition-all duration-300 hover:bg-white/10 border border-white/60 text-white uppercase tracking-wider"
               >
                 Browse Categories
               </a>

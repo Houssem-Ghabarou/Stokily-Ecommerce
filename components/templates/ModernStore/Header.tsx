@@ -32,7 +32,7 @@ export default function Header({
   const headerHeight = Math.max(64, logoSize + 24); // Minimum 64px, or logo size + 24px padding
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+    <header className="sticky top-0 z-50 bg-white/98 backdrop-blur-sm shadow-sm" style={{ borderBottomColor: 'var(--border-color)', borderBottomWidth: '1px' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div 
           className="flex items-center justify-between gap-4"
@@ -45,10 +45,11 @@ export default function Header({
           >
             {config.logoUrl ? (
               <div 
-                className="relative rounded-xl overflow-hidden shadow-sm bg-white"
+                className="relative rounded-none overflow-hidden shadow-sm bg-white"
                 style={{ 
                   width: `${config.logoSize || 40}px`, 
-                  height: `${config.logoSize || 40}px` 
+                  height: `${config.logoSize || 40}px`,
+                  border: '1px solid var(--border-color)'
                 }}
               >
                 <Image

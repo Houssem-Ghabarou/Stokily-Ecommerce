@@ -69,54 +69,44 @@ export default function FeaturedProducts({
   };
 
   return (
-    <section className="py-12 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-16 md:py-20" style={{ backgroundColor: 'var(--background)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex items-center justify-between mb-8">
-          <div className="flex items-center gap-3">
-            <div
-              className="p-2 rounded-lg"
-              style={{ backgroundColor: `${primaryColor}15` }}
-            >
-              <Star
-                className="w-6 h-6"
-                style={{ color: primaryColor }}
-                fill={primaryColor}
-              />
-            </div>
+        <div className="flex items-center justify-between mb-12">
+          <div className="flex items-center gap-4">
             <div>
               <h2
-                className="text-2xl font-bold"
+                className="text-3xl md:text-4xl font-medium mb-2"
                 style={{ 
-                  fontFamily: "var(--font-heading), system-ui, sans-serif",
+                  fontFamily: "var(--font-heading), serif",
                   color: secondaryColor 
                 }}
               >
-                Featured Products
+                Featured Collection
               </h2>
-              <p className="text-gray-500 text-sm">
-                Handpicked favorites just for you
-              </p>
+              <div className="h-0.5 w-12" style={{ backgroundColor: 'var(--primary-color)' }}></div>
             </div>
           </div>
 
           {/* Navigation Arrows - Desktop */}
-          <div className="hidden sm:flex items-center gap-2">
+          <div className="hidden sm:flex items-center gap-3">
             <button
               onClick={() => scroll("left")}
               disabled={!canScrollLeft}
-              className="p-2 rounded-full border border-gray-200 hover:bg-gray-50 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+              className="p-2 transition-all hover:opacity-60 disabled:opacity-20 disabled:cursor-not-allowed"
               aria-label="Scroll left"
+              style={{ color: 'var(--primary-color)' }}
             >
-              <ChevronLeft className="w-5 h-5 text-gray-600" />
+              <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={() => scroll("right")}
               disabled={!canScrollRight}
-              className="p-2 rounded-full border border-gray-200 hover:bg-gray-50 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+              className="p-2 transition-all hover:opacity-60 disabled:opacity-20 disabled:cursor-not-allowed"
               aria-label="Scroll right"
+              style={{ color: 'var(--primary-color)' }}
             >
-              <ChevronRight className="w-5 h-5 text-gray-600" />
+              <ChevronRight className="w-5 h-5" />
             </button>
           </div>
         </div>
@@ -140,7 +130,8 @@ export default function FeaturedProducts({
               <Link
                 key={product.id}
                 href={`/${slug}/products/${product.id}`}
-                className="featured-card group w-[280px] sm:w-[300px] bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300"
+                className="featured-card group w-[280px] sm:w-[300px] bg-white rounded-none shadow-sm overflow-hidden hover:shadow-md transition-all duration-300"
+                style={{ borderColor: 'var(--border-color)', borderWidth: '1px' }}
               >
                 {/* Image */}
                 <div className="relative aspect-[4/3] bg-gray-50 overflow-hidden">
@@ -179,10 +170,9 @@ export default function FeaturedProducts({
                   {/* Featured Tag */}
                   <div className="absolute top-3 right-3">
                     <span
-                      className="inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium text-white"
+                      className="inline-flex items-center gap-1 px-3 py-1 rounded-none text-xs font-medium text-white uppercase tracking-wider"
                       style={{ backgroundColor: primaryColor }}
                     >
-                      <Star className="w-3 h-3" fill="white" />
                       Featured
                     </span>
                   </div>
@@ -205,7 +195,7 @@ export default function FeaturedProducts({
                     </p>
                   )}
 
-                  <h3 className="font-semibold text-gray-900 line-clamp-2 mb-2 group-hover:text-primary transition-colors">
+                  <h3 className="font-medium text-gray-900 line-clamp-2 mb-2 group-hover:opacity-70 transition-opacity" style={{ fontFamily: 'var(--font-heading), serif' }}>
                     {product.name}
                   </h3>
 
@@ -235,7 +225,7 @@ export default function FeaturedProducts({
                     {product.inStock && (
                       <button
                         onClick={(e) => handleAddToCart(e, product)}
-                        className="px-4 py-2 rounded-full text-sm font-medium text-white transition-all hover:scale-105"
+                        className="px-4 py-2 rounded-none text-xs font-medium text-white transition-all hover:opacity-80 uppercase tracking-wider"
                         style={{ backgroundColor: primaryColor }}
                       >
                         {product.hasVariants ? "Options" : "Add"}
