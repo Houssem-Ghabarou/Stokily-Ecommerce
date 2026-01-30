@@ -69,22 +69,23 @@ export default function FeaturedProducts({
   };
 
   return (
-    <section className="py-16 md:py-20" style={{ backgroundColor: 'var(--background)' }}>
+    <section className="py-20 md:py-24" style={{ backgroundColor: 'var(--background)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex items-center justify-between mb-12">
+        <div className="flex items-center justify-between mb-16">
           <div className="flex items-center gap-4">
             <div>
               <h2
-                className="text-3xl md:text-4xl font-medium mb-2"
+                className="text-4xl md:text-5xl font-light mb-3"
                 style={{ 
                   fontFamily: "var(--font-heading), serif",
-                  color: secondaryColor 
+                  color: 'var(--primary-color)',
+                  letterSpacing: '-0.5px'
                 }}
               >
                 Featured Collection
               </h2>
-              <div className="h-0.5 w-12" style={{ backgroundColor: 'var(--primary-color)' }}></div>
+              <div className="h-1 w-16" style={{ backgroundColor: 'var(--primary-color)' }}></div>
             </div>
           </div>
 
@@ -130,11 +131,11 @@ export default function FeaturedProducts({
               <Link
                 key={product.id}
                 href={`/${slug}/products/${product.id}`}
-                className="featured-card group w-[280px] sm:w-[300px] bg-white rounded-none shadow-sm overflow-hidden hover:shadow-md transition-all duration-300"
+                className="featured-card group w-[280px] sm:w-[300px] bg-black/40 rounded-none shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
                 style={{ borderColor: 'var(--border-color)', borderWidth: '1px' }}
               >
                 {/* Image */}
-                <div className="relative aspect-[4/3] bg-gray-50 overflow-hidden">
+                <div className="relative aspect-[4/3] bg-gray-900 overflow-hidden">
                   {images.length > 0 ? (
                     <Image
                       src={images[0]}
@@ -190,17 +191,17 @@ export default function FeaturedProducts({
                 {/* Content */}
                 <div className="p-4">
                   {product.categoryName && (
-                    <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">
+                    <p className="text-xs text-gray-500 uppercase tracking-widest mb-2 font-light">
                       {product.categoryName}
                     </p>
                   )}
 
-                  <h3 className="font-medium text-gray-900 line-clamp-2 mb-2 group-hover:opacity-70 transition-opacity" style={{ fontFamily: 'var(--font-heading), serif' }}>
+                  <h3 className="font-normal text-white line-clamp-2 mb-3 group-hover:opacity-80 transition-opacity" style={{ fontFamily: 'var(--font-heading), serif', fontSize: '1.1rem' }}>
                     {product.name}
                   </h3>
 
                   {product.description && (
-                    <p className="text-sm text-gray-500 line-clamp-2 mb-3">
+                    <p className="text-sm text-gray-400 line-clamp-2 mb-4 font-light">
                       {product.description}
                     </p>
                   )}
@@ -208,15 +209,15 @@ export default function FeaturedProducts({
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                       <span
-                        className={`text-xl font-bold ${
-                          hasDiscount ? "text-red-600" : ""
+                        className={`text-lg font-semibold ${
+                          hasDiscount ? "text-red-500" : ""
                         }`}
-                        style={!hasDiscount ? { color: primaryColor } : undefined}
+                        style={!hasDiscount ? { color: 'var(--primary-color)' } : undefined}
                       >
                         {formatPrice(product.sellingPrice)}
                       </span>
                       {hasDiscount && (
-                        <span className="text-sm text-gray-400 line-through">
+                        <span className="text-sm text-gray-500 line-through">
                           {formatPrice(product.originalPrice!)}
                         </span>
                       )}
@@ -225,8 +226,8 @@ export default function FeaturedProducts({
                     {product.inStock && (
                       <button
                         onClick={(e) => handleAddToCart(e, product)}
-                        className="px-4 py-2 rounded-none text-xs font-medium text-white transition-all hover:opacity-80 uppercase tracking-wider"
-                        style={{ backgroundColor: primaryColor }}
+                        className="px-4 py-2 rounded-none text-xs font-semibold text-black transition-all hover:opacity-85 uppercase tracking-widest"
+                        style={{ backgroundColor: 'var(--primary-color)' }}
                       >
                         {product.hasVariants ? "Options" : "Add"}
                       </button>

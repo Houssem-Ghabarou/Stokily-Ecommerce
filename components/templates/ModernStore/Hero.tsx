@@ -49,9 +49,9 @@ export default function Hero({ config }: HeroProps) {
               backgroundRepeat: "no-repeat",
             }}
           />
-          {/* Subtle default overlay for text readability (always present) */}
+          {/* Dark overlay for luxury feel */}
           <div
-            className="absolute inset-0 bg-black/20"
+            className="absolute inset-0 bg-black/40"
           />
           {/* Configurable overlay for text readability */}
           {overlayEnabled && (
@@ -59,17 +59,17 @@ export default function Hero({ config }: HeroProps) {
               className="absolute inset-0"
               style={{
                 backgroundColor: overlayColor,
-                opacity: overlayOpacity / 100,
+                opacity: (overlayOpacity + 20) / 100,
               }}
             />
           )}
         </>
       ) : (
-        /* Gradient Fallback */
+        /* Dark gradient fallback */
         <div
           className="absolute inset-0"
           style={{
-            background: `linear-gradient(135deg, ${config.primaryColor}20 0%, ${config.primaryColor}08 50%, ${config.secondaryColor}10 100%)`,
+            background: `linear-gradient(135deg, ${config.primaryColor}15 0%, #1a1a1a 50%, #0f0f0f 100%)`,
           }}
         />
       )}
@@ -79,25 +79,27 @@ export default function Hero({ config }: HeroProps) {
         <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex ${positionClass}`}>
           <div className="w-full">
             <h1
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-sm"
+              className="text-5xl sm:text-6xl lg:text-7xl font-light mb-8 drop-shadow-lg"
               style={{ 
-                color: hasBanner ? "#ffffff" : config.secondaryColor,
-                fontFamily: `var(--font-heading), ${config.headingFont || 'Poppins'}, system-ui, sans-serif`
+                color: hasBanner ? "#ffffff" : 'var(--foreground)',
+                fontFamily: 'var(--font-heading), serif',
+                letterSpacing: '-1px'
               }}
             >
               {heroText}
             </h1>
             {config.storeDescription && (
               <p
-                className={`text-lg sm:text-xl mb-8 ${
-                  hasBanner ? "text-white/90" : "text-gray-600"
+                className={`text-lg sm:text-xl mb-10 font-light ${
+                  hasBanner ? "text-white/80" : "text-gray-400"
                 } ${
                   textPosition.includes("left") ? "max-w-2xl" : 
                   textPosition.includes("right") ? "max-w-2xl ml-auto" : 
                   "max-w-2xl mx-auto"
                 }`}
                 style={{
-                  fontFamily: `var(--font-body), ${config.bodyFont || 'Inter'}, system-ui, sans-serif`
+                  fontFamily: 'var(--font-body), system-ui, sans-serif',
+                  letterSpacing: '0.5px'
                 }}
               >
                 {config.storeDescription}

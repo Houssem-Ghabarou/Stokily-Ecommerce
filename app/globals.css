@@ -2,21 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Sohne:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Premium Color Palette */
-  --primary-color: #8B6F47;
-  --secondary-color: #1a1a1a;
-  --background: #faf8f5;
-  --foreground: #2d2d2d;
-  --accent: #c9a876;
-  --accent-light: #e8dcc8;
-  --border-color: #d4cfc8;
+  /* Dark Luxury Color Palette */
+  --primary-color: #d4af37;
+  --secondary-color: #0f0f0f;
+  --background: #1a1a1a;
+  --foreground: #e8e8e8;
+  --accent: #b8960f;
+  --accent-light: #2a2a2a;
+  --border-color: #333333;
+  --text-secondary: #a8a8a8;
   
   /* Typography */
   --font-heading: 'Playfair Display', serif;
-  --font-body: 'Sohne', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
 }
 
 body {
@@ -25,16 +26,16 @@ body {
   background: var(--background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.4px;
 }
 
 /* Typography - Apply fonts to all headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  font-weight: 600;
-  line-height: 1.25;
-  letter-spacing: -0.5px;
-  color: var(--secondary-color);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+  color: var(--foreground);
 }
 
 /* Apply heading font to bold text elements */
@@ -43,10 +44,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
 }
 
-h1 { @apply text-4xl md:text-5xl lg:text-6xl font-medium; }
-h2 { @apply text-3xl md:text-4xl font-medium; }
-h3 { @apply text-2xl md:text-3xl font-medium; }
-h4 { @apply text-xl md:text-2xl font-medium; }
+h1 { @apply text-5xl md:text-6xl lg:text-7xl font-light; }
+h2 { @apply text-4xl md:text-5xl font-light; }
+h3 { @apply text-3xl md:text-4xl font-normal; }
+h4 { @apply text-2xl md:text-3xl font-normal; }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
@@ -55,11 +56,11 @@ h4 { @apply text-xl md:text-2xl font-medium; }
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--background);
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border-color);
+  background: #404040;
   border-radius: 4px;
 }
 
@@ -75,30 +76,30 @@ h4 { @apply text-xl md:text-2xl font-medium; }
 
 /* Button base styles */
 .btn {
-  @apply inline-flex items-center justify-center px-6 py-3 rounded-none font-medium transition-all duration-300 text-sm uppercase tracking-wider;
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-none font-medium transition-all duration-300 text-sm uppercase tracking-widest;
 }
 
 .btn-primary {
   background-color: var(--primary-color);
-  color: white;
-  @apply hover:opacity-80 active:scale-95;
+  color: #0f0f0f;
+  @apply hover:opacity-85 active:scale-95 font-semibold;
 }
 
 .btn-secondary {
-  background-color: var(--secondary-color);
-  color: white;
-  @apply hover:opacity-80 active:scale-95;
+  background-color: #333333;
+  color: var(--foreground);
+  @apply hover:bg-gray-700 active:scale-95;
 }
 
 .btn-outline {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
-  @apply hover:bg-primary hover:text-white;
+  @apply hover:bg-primary hover:text-black;
 }
 
 /* Card styles */
 .card {
-  @apply bg-white rounded-none shadow-sm border;
+  @apply bg-black/40 rounded-none shadow-sm border;
   border-color: var(--border-color);
 }
 
@@ -106,50 +107,57 @@ h4 { @apply text-xl md:text-2xl font-medium; }
 .input {
   @apply w-full px-4 py-3 border rounded-none transition-colors font-body;
   border-color: var(--border-color);
-  background: white;
+  background: #2a2a2a;
+  color: var(--foreground);
+}
+
+.input::placeholder {
+  color: #666666;
 }
 
 .input:focus {
   outline: none;
   border-color: var(--primary-color);
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+  background: #333333;
+  box-shadow: 0 0 0 1px var(--primary-color), inset 0 0 4px rgba(212, 175, 55, 0.1);
 }
 
 /* Badge styles */
 .badge {
-  @apply inline-flex items-center px-3 py-1.5 rounded-none text-xs font-medium uppercase tracking-wider;
-  background-color: var(--accent-light);
+  @apply inline-flex items-center px-3 py-1.5 rounded-none text-xs font-semibold uppercase tracking-widest;
+  background-color: transparent;
   color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 .badge-success {
-  @apply bg-emerald-100 text-emerald-700;
+  @apply bg-emerald-900 text-emerald-300 border-emerald-500;
 }
 
 .badge-warning {
-  @apply bg-amber-100 text-amber-700;
+  @apply bg-amber-900 text-amber-300 border-amber-500;
 }
 
 .badge-error {
-  @apply bg-red-100 text-red-700;
+  @apply bg-red-900 text-red-300 border-red-500;
 }
 
 /* Product badges */
 .product-badge {
-  @apply absolute z-10 px-3 py-2 text-xs font-semibold rounded-none shadow-sm uppercase tracking-wider;
+  @apply absolute z-10 px-3 py-2 text-xs font-semibold rounded-none shadow-lg uppercase tracking-widest;
 }
 
 .product-badge-new {
   background-color: var(--primary-color);
-  @apply text-white;
+  @apply text-black;
 }
 
 .product-badge-sale {
-  @apply bg-red-600 text-white;
+  @apply bg-red-700 text-red-100;
 }
 
 .product-badge-low-stock {
-  @apply bg-amber-600 text-white;
+  @apply bg-amber-700 text-amber-100;
 }
 
 /* Card hover effects */
@@ -158,8 +166,9 @@ h4 { @apply text-xl md:text-2xl font-medium; }
 }
 
 .card-hover:hover {
-  @apply shadow-md;
+  @apply shadow-lg;
   border-color: var(--primary-color);
+  background: black/50;
 }
 
 /* Image zoom on hover */
@@ -183,16 +192,21 @@ h4 { @apply text-xl md:text-2xl font-medium; }
 
 /* Search bar styles */
 .search-input {
-  @apply w-full pl-10 pr-4 py-2.5 bg-white border rounded-none
-         text-sm placeholder-gray-400 font-body
-         transition-all duration-200;
+  @apply w-full pl-10 pr-4 py-2.5 border rounded-none
+         text-sm font-body transition-all duration-200;
+  background: #2a2a2a;
   border-color: var(--border-color);
+  color: var(--foreground);
+}
+
+.search-input::placeholder {
+  color: #666666;
 }
 
 .search-input:focus {
   outline: none;
   border-color: var(--primary-color);
-  background: white;
+  background: #333333;
 }
 
 /* Filter pill styles */
@@ -205,23 +219,26 @@ h4 { @apply text-xl md:text-2xl font-medium; }
 .filter-pill-active {
   border-color: var(--primary-color);
   background-color: var(--primary-color);
-  @apply text-white;
+  @apply text-black font-semibold;
 }
 
 .filter-pill-inactive {
-  @apply hover:bg-gray-50;
+  @apply hover:bg-gray-900;
   border-color: var(--border-color);
 }
 
 /* Sort dropdown */
 .sort-select {
-  @apply px-4 py-2 text-sm rounded-none bg-white transition-all duration-200 cursor-pointer font-body;
+  @apply px-4 py-2 text-sm rounded-none transition-all duration-200 cursor-pointer font-body;
+  background: #2a2a2a;
   border: 1px solid var(--border-color);
+  color: var(--foreground);
 }
 
 .sort-select:focus {
   outline: none;
   border-color: var(--primary-color);
+  background: #333333;
 }
 
 /* Featured section */

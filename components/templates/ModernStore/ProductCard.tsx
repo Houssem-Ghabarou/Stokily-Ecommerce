@@ -51,7 +51,7 @@ export default function ProductCard({
       style={{ borderColor: 'var(--border-color)' }}
     >
       {/* Product Image */}
-      <div className="relative aspect-square bg-gray-50 overflow-hidden">
+      <div className="relative aspect-square bg-gray-900 overflow-hidden">
         {(() => {
           const images =
             product.imageUrls && product.imageUrls.length > 0
@@ -138,28 +138,28 @@ export default function ProductCard({
       {/* Product Info */}
       <div className="p-4">
         <h3 
-          className="font-medium text-gray-900 line-clamp-2 group-hover:opacity-70 transition-opacity min-h-[2.5rem]"
-          style={{ fontFamily: "var(--font-heading), serif" }}
+          className="font-normal text-white line-clamp-2 group-hover:opacity-80 transition-opacity min-h-[2.5rem]"
+          style={{ fontFamily: "var(--font-heading), serif", fontSize: '1.05rem' }}
         >
           {product.name}
         </h3>
 
         {product.categoryName && (
-          <p className="text-sm text-gray-500 mt-1 truncate">
+          <p className="text-xs text-gray-500 mt-2 truncate uppercase tracking-widest font-light">
             {product.categoryName}
           </p>
         )}
 
-        <div className="mt-3 flex items-center gap-2">
+        <div className="mt-4 flex items-center gap-2">
           <span
-            className={`text-lg font-bold ${hasDiscount ? "price-sale" : ""}`}
-            style={!hasDiscount ? { color: primaryColor } : undefined}
+            className={`text-lg font-semibold ${hasDiscount ? "price-sale" : ""}`}
+            style={!hasDiscount ? { color: 'var(--primary-color)' } : undefined}
           >
             {formatPrice(product.sellingPrice)}
           </span>
 
           {hasDiscount && (
-            <span className="price-original">
+            <span className="price-original text-gray-500">
               {formatPrice(product.originalPrice!)}
             </span>
           )}

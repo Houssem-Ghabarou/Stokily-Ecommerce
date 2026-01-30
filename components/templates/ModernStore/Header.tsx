@@ -32,7 +32,7 @@ export default function Header({
   const headerHeight = Math.max(64, logoSize + 24); // Minimum 64px, or logo size + 24px padding
 
   return (
-    <header className="sticky top-0 z-50 bg-white/98 backdrop-blur-sm shadow-sm" style={{ borderBottomColor: 'var(--border-color)', borderBottomWidth: '1px' }}>
+    <header className="sticky top-0 z-50 bg-black/95 backdrop-blur-md shadow-lg" style={{ borderBottomColor: 'var(--border-color)', borderBottomWidth: '1px' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div 
           className="flex items-center justify-between gap-4"
@@ -45,11 +45,11 @@ export default function Header({
           >
             {config.logoUrl ? (
               <div 
-                className="relative rounded-none overflow-hidden shadow-sm bg-white"
+                className="relative rounded-none overflow-hidden shadow-sm bg-black"
                 style={{ 
                   width: `${config.logoSize || 40}px`, 
                   height: `${config.logoSize || 40}px`,
-                  border: '1px solid var(--border-color)'
+                  border: '1px solid var(--primary-color)'
                 }}
               >
                 <Image
@@ -78,11 +78,12 @@ export default function Header({
               </div>
             )}
             <span
-              className="font-bold hidden sm:block"
+              className="font-light hidden sm:block"
               style={{ 
-                fontFamily: "var(--font-heading), system-ui, sans-serif",
-                color: config.secondaryColor,
-                fontSize: `${config.headerTextSize || 20}px`
+                fontFamily: "var(--font-heading), serif",
+                color: 'var(--primary-color)',
+                fontSize: `${config.headerTextSize || 20}px`,
+                letterSpacing: '2px'
               }}
             >
               {config.storeName}
@@ -104,7 +105,7 @@ export default function Header({
           <nav className="hidden lg:flex items-center gap-1">
             <Link
               href={`/${slug}`}
-              className="px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg font-medium transition-colors"
+              className="px-3 py-2 text-gray-400 hover:text-white hover:bg-gray-800 rounded-lg font-medium transition-colors"
             >
               Home
             </Link>
@@ -115,21 +116,21 @@ export default function Header({
             {/* Mobile Search Button */}
             {onSearchChange && (
               <button
-                className="md:hidden p-2 hover:bg-gray-100 rounded-full transition-colors"
+                className="md:hidden p-2 hover:bg-gray-800 rounded-full transition-colors"
                 onClick={() => setMobileSearchOpen(!mobileSearchOpen)}
                 aria-label="Search"
               >
-                <Search className="w-5 h-5 text-gray-600" />
+                <Search className="w-5 h-5 text-gray-400" />
               </button>
             )}
 
             {/* Cart */}
             <Link
               href={`/${slug}/cart`}
-              className="relative p-2 hover:bg-gray-100 rounded-full transition-colors"
+              className="relative p-2 hover:bg-gray-800 rounded-full transition-colors"
               aria-label="Shopping cart"
             >
-              <ShoppingCart className="w-6 h-6 text-gray-700" />
+              <ShoppingCart className="w-6 h-6 text-gray-300" />
               {cartItemCount > 0 && (
                 <span
                   className="absolute -top-1 -right-1 min-w-[20px] h-5 rounded-full text-white text-xs flex items-center justify-center px-1 font-medium"
@@ -142,14 +143,14 @@ export default function Header({
 
             {/* Mobile Menu Button */}
             <button
-              className="lg:hidden p-2 hover:bg-gray-100 rounded-full transition-colors"
+              className="lg:hidden p-2 hover:bg-gray-800 rounded-full transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
             >
               {mobileMenuOpen ? (
-                <X className="w-6 h-6 text-gray-700" />
+                <X className="w-6 h-6 text-gray-300" />
               ) : (
-                <Menu className="w-6 h-6 text-gray-700" />
+                <Menu className="w-6 h-6 text-gray-300" />
               )}
             </button>
           </div>
@@ -157,7 +158,7 @@ export default function Header({
 
         {/* Mobile Search Bar */}
         {mobileSearchOpen && onSearchChange && (
-          <div className="md:hidden py-3 border-t border-gray-100">
+          <div className="md:hidden py-3" style={{ borderTopColor: 'var(--border-color)', borderTopWidth: '1px' }}>
             <SearchBar
               value={searchQuery}
               onChange={onSearchChange}
@@ -168,11 +169,11 @@ export default function Header({
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="lg:hidden py-4 border-t border-gray-100">
+          <nav className="lg:hidden py-4" style={{ borderTopColor: 'var(--border-color)', borderTopWidth: '1px' }}>
             <div className="flex flex-col gap-1">
               <Link
                 href={`/${slug}`}
-                className="px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg font-medium transition-colors"
+                className="px-4 py-3 text-gray-400 hover:bg-gray-800 rounded-lg font-medium transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Home

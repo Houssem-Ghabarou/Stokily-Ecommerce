@@ -36,12 +36,12 @@ export default function Footer({ config, slug }: FooterProps) {
                   <Store className="w-5 h-5 text-white" />
                 </div>
               )}
-              <span className="text-white font-bold text-xl">
+              <span className="font-light text-xl" style={{ color: 'var(--primary-color)', letterSpacing: '1px' }}>
                 {config.storeName}
               </span>
             </Link>
             {config.storeDescription && (
-              <p className="text-gray-400 text-sm max-w-md leading-relaxed">
+              <p className="text-gray-500 text-sm max-w-md leading-relaxed font-light">
                 {config.storeDescription}
               </p>
             )}
